@@ -1,0 +1,34 @@
+{
+  "_说明": "微信消息抓取 Skill 配置文件。安装时按《安装配置说明书》逐项回答，填入下方。带[]的是示例，安装者换成自己的值；不需要的功能留空。",
+  "project": "my-wechat-capture",
+  "version": "1.1.0",
+  "targets": {
+    "groups": ["示例群A", "示例群B"],
+    "contacts": ["示例联系人"]
+  },
+  "rules": {
+    "keywords": ["示例关键词1", "示例关键词2"],
+    "exclude_keywords": ["示例排除词"],
+    "senders": ["示例群内昵称"],
+    "require_phone": false
+  },
+  "time_range_days": 3,
+  "poll": {
+    "interval_seconds": 3600,
+    "jitter_seconds": 600,
+    "sample_ratio": 0.7,
+    "night_stop": {
+      "start": 23,
+      "end": 6
+    }
+  },
+  "summary": {
+    "enabled": true,
+    "frequency": "daily",
+    "schedule": "20:00",
+    "send_to": "文件传输助手",
+    "max_chars": 1800
+  },
+  "db_path": "db/messages.db",
+  "log_dir": "logs"
+}

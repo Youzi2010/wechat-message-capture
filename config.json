@@ -1,0 +1,36 @@
+{
+  "project": "my-wechat-capture",
+  "version": "1.1.0",
+  "targets": {
+    "groups": [],
+    "contacts": []
+  },
+  "rules": {
+    "keywords": [],
+    "exclude_keywords": [],
+    "senders": [],
+    "require_phone": false
+  },
+  "time_range_days": 3,
+  "poll": {
+    "interval_seconds": 3600,
+    "jitter_seconds": 600,
+    "sample_ratio": 0.7,
+    "night_stop": {
+      "start": 23,
+      "end": 6
+    },
+    "chat_switch_delay_min": 3,
+    "chat_switch_delay_max": 8
+  },
+  "summary": {
+    "enabled": true,
+    "frequency": "daily",
+    "schedule": "20:00",
+    "send_to": "文件传输助手",
+    "max_chars": 1800
+  },
+  "db_path": "db/messages.db",
+  "log_dir": "logs",
+  "enable_sender_wxid": false
+}

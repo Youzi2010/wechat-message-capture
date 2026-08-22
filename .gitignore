@@ -1,0 +1,9 @@
+# 运行时生成文件（不提交）
+__pycache__/
+*.pyc
+db/*.db
+db/*.db-journal
+db/wechat_summary_*.txt
+db/msg_part_*.txt
+logs/
+wxauto_logs/
